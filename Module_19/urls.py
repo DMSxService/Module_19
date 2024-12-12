@@ -20,7 +20,7 @@ from task1.views import func_games, ClassPlatform, ClassCart
 from task1.views import sign_up_by_django, sign_up_by_html
 
 urlpatterns = [
-    path('', ClassPlatform.as_view()),
+    path('admin/', admin.site.urls),
     path('platform/', ClassPlatform.as_view()),
     path('platform/games/', func_games),
     path('platform/cart/', ClassCart.as_view()),
