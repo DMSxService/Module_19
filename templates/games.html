@@ -1,0 +1,9 @@
+{% extends "menu.html" %}
+{% block content %}
+<ul>
+        {% for i in games%}
+            <li>  {{i}} {{description}} {{cost}}<button>{{b1}}</button></li>
+        {% endfor %}
+</ul>
+{% endblock %}
+
